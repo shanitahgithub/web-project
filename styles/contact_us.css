@@ -28,7 +28,7 @@ include the padding and border in an element's total width and height. */
 .contact .content h2{
     font-size: 36px;
     font-weight: 500;
-     color: #fff;
+     color: red;
 }
 .contact .content p{
     font-size: 300;
@@ -82,8 +82,8 @@ include the padding and border in an element's total width and height. */
 
 }
 .contact-form h2{
-    font-size:30px ;
-    color:#333;
+    font-size:20px ;
+    color:red;
     font-weight: 500;
 }
 .contact-form .input-box{

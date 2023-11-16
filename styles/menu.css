@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+    font-family: 'poppins', sans-serif;
+
+}
+.menu{
+    padding: 0, 10px, 30px, 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 15px;
+    /* fr means fraction. The minmax() CSS function defines a size range greater than or 
+    equal to min and less than or equal to max. It is used with CSS Grids. */
+    
+}
+    .headings{
+        background-color: #e84343;
+        color: #fff;
+        margin-bottom: 30px;
+        padding: 30px, 0;
+        grid-column: 1/-1;
+        text-align: center;
+    }
+    .headings>h1{
+        font-weight: 400;
+        font-size: 32px;
+        letter-spacing: 10px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+    .headings>h3{
+        font-weight: 600;
+        font-size: 32px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+    }
+    .food-items{
+        padding: 20px 10px;
+        grid-template-rows: auto 1fr 50px;
+        grid-row-gap: 15px;
+        display: grid;
+        position: relative;
+        grid-template-rows: auto, 1fr;
+        border-radius: 15px;
+        box-shadow:0 0 15px rgba(0,0,0,0,1);
+        transition: .2 ease-in-out;
+        margin-top: 0;
+        margin-bottom: 0;
+        /* ease-in-out - specifies a transition effect with a slow start and end. */
+
+    }
+.food-items img{
+    position: relative;
+    width: 100%;
+    height: 280px;
+    border-radius: 15px 15px 0 0;
+    cursor: pointer;
+}
+h1{
+    grid-column: 1/-1;
+    text-align: center;
+}
+.details{
+    padding: 20px 10px;
+    display: grid;
+    grid-template-rows: auto 1fr 50px;
+    grid-row-gap: 15px;
+}
+.details-sub{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.details-sub>h5{
+    font-weight: 600;
+    font-size: 18px;
+
+}
+.price{
+    text-align: right;
+}
+.food-items>button{
+    background: #e84343;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    width: 180px;
+    cursor: pointer;
+}
+.food-items>button:hover{
+    background: #fc0101;
+    cursor: pointer;
+}
+h5{
+    color: white;
+    
+}
+a{
+    font-weight: 600;
+    color: #fff;
+}
+
+
+

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="shortcut icon" href="../Images/favicon.avif" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/about.css">
+    <script>
+        var i = 0 //starting point
+        var images = []
+        var time = 2000
+
+        //image lists
+        images[0]= '../Images/jomat interiors/dinner-table-luxury-hotel_1150-10908.avif';
+        images[1] = '../Images/chefs staff.jpg';
+        images[2] = '../Images/jomat interiors/loyal blue.avif';
+        images[3] = '../Images/lcooprate.avif';
+        images[4] = '../Images/professional-kitchen-with-utensils_23-2149727933.avif';
+        // creating a function to change the image
+    function changeimg(){
+    //we can get this because we put the name slide in the attribute of image
+        document.slide.src = images[i];
+        if(i<images.length - 1){
+            i++;
+
+        } else{
+            i= 0;
+        }
+        setTimeout("changeimg()", time)
+    }
+    window.onload = changeimg
+    </script>
+</head>
+<body>
+    <div class="parentdiv">
+        <div class="title">
+            <h1 class="about">About Us</h1>
+        </div>
+        <div class="content">
+            <div class="article">
+                <h2> Jomat Online Food shop</h2>
+                <p>Jomat Restaurant was found in 2019 by M & J in a city called Seoul. It all began by preparing meals for friends, family and alumni reunions.
+                    that was the spark off for the Jomat restaurant and now we also have an online food shop.
+                    We really have competitive, experienced team of chefs who really understand what they do.
+                    We have comeup with a variety of dishes all over the world. And because of this we are the leading restaurant in the world.
+                    </p>
+                    <a href="">Read more</a>
+            </div>
+            <div class="image-section">
+                <img name="slide" src="../Images/jomat interiors/dinner-table-luxury-hotel_1150-10908.avif" alt="">
+            </div>
+            
+
+        </div>
+
+    </div>
+    
+    
+    <a href="../Home.html" id="link-home">Back to home</a>
+    
+</body>
+</html>
